@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mainFragment == null){
             mainFragment = MainFragment.newInstance("blah","klah");
+            fm.beginTransaction().add(R.id.container_main,mainFragment).commit();
         }
     }
 }
